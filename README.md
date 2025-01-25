@@ -1,7 +1,7 @@
 # db-backup
 
 ## Overview
-`db-backup` is a bash script that automates the backup of a database using `mariadb-dump`.
+`db-backup` is a bash script that automates the backup of a database using `mariadb-dump`. This script also compresses the backup using `zip` and logs the backup process to a .log file. It also deletes backups older than 15 days. It originally made to automatically backup the database of [Comus Party](https://github.com/ValbionGroup/Comus-Party).
 
 ## Features
 - Backs up a database using `mariadb-dump`.
