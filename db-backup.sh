@@ -58,4 +58,4 @@ echo -------------------------------------------------- >> $logfile
 
 
 # DELETE OLD BACKUPS
-find $backupfolder -mtime +$keep_day -delete
+find $backupfolder -mtime +$keep_day ! -name "*.log" -delete
